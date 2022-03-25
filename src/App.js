@@ -3,11 +3,13 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 
 import './App.css';
 import NavBar from './components/NavBar';
+import SearchMenu from './components/SearchMenu';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
+      <SearchMenu/>
       
     </div>
   );

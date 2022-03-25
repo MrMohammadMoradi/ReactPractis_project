@@ -1,4 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.SearchSecion {
+  height: 63vh;
+  background-image: url(assets/images/pizza2.jpg);
+  background-size: cover;
+  filter: brightness(76%);
+
+}
+
+.SearchBox {
+  width: 450px;
+  height: 45vh;
+  background: rgb(224, 199, 199, 0.80);
+  border-radius: 12px;
+  filter: brightness(120%);
+}
+.SearchBox .nameinput {
+  width: 330px;
+  border-radius: 10px;
+}
+
+.SearchBox .NumberRecipes input {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.SearchBox button {
+  background: rgb(255, 187, 0);
+  border-radius: 10px;
+}
