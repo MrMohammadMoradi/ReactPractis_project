@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .App {
   text-align: center;
+  background: rgb(212, 212, 212);
 }
 
 .navbar {
@@ -13,16 +15,16 @@
 }
 
 .SearchSecion {
-  height: 63vh;
+  height: 450px;
   background-image: url(assets/images/pizza2.jpg);
   background-size: cover;
-  filter: brightness(76%);
-
+  filter: contrast(85%);
+  border-bottom: 1px solid black;
 }
 
 .SearchBox {
   width: 450px;
-  height: 45vh;
+  height: 300px;
   background: rgb(224, 199, 199, 0.80);
   border-radius: 12px;
   filter: brightness(120%);
@@ -40,4 +42,29 @@
 .SearchBox button {
   background: rgb(255, 187, 0);
   border-radius: 10px;
+}
+
+.container {
+  text-align: left;
+}
+
+.titleSecion {
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 0;
+} 
+
+.subContainer { 
+  border: 1px solid black;
+  padding: 50px 85px;
+}
+
+.recipesCard {
+  flex-basis: 33%;
+  border: radius 5px ;
+}
+.SeeMore {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: -5px;
 }
