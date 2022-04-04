@@ -16,7 +16,7 @@
 
 .SearchSecion {
   height: 450px;
-  background-image: url(assets/images/pizza2.jpg);
+  background-image: url(assets/images/pizza.jpg);
   background-size: cover;
   filter: contrast(85%);
   border-bottom: 1px solid black;
@@ -55,12 +55,18 @@
 
 .subContainer { 
   border: 1px solid black;
-  padding: 50px 85px;
+  padding-top: 40px;
+  padding-left: 4%;
 }
 
 .recipesCard {
-  flex-basis: 33%;
+  flex-basis: 32%;
   border: radius 5px ;
+  height: 700px;
+}
+.CardImage {
+  height: 250px;
+  border-radius: 8px;
 }
 .SeeMore {
   width: 100%;

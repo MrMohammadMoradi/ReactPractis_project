@@ -1,4 +1,4 @@
-import MenuBackground from '../assets/images/pizza2.jpg'
+import MenuBackground from '../assets/images/pizza.jpg'
 
 function SearchMenu(){
     return(
