@@ -3,17 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/************************ App.js ********************/
 .App {
   text-align: center;
   background: rgb(212, 212, 212);
 }
 
+/************************ NavBar ********************/
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
 }
 
+/********************* Search Menu ******************/
 .SearchSecion {
   height: 450px;
   background-image: url(assets/images/pizza.jpg);
@@ -21,7 +23,6 @@
   filter: contrast(85%);
   border-bottom: 1px solid black;
 }
-
 .SearchBox {
   width: 450px;
   height: 300px;
@@ -33,15 +34,21 @@
   width: 330px;
   border-radius: 10px;
 }
-
 .SearchBox .NumberRecipes input {
   width: 80px;
   border-radius: 10px;
 }
-
 .SearchBox button {
   background: rgb(255, 187, 0);
   border-radius: 10px;
+}
+
+
+/******************** HomePage **********************/
+.selectNumberOfRecipes {
+  width: 60px;
+  height: 32px;
+  border-radius: 5px;
 }
 
 .container {
@@ -59,14 +66,16 @@
   padding-left: 4%;
 }
 
+
+/******************** Card.js ***********************/
 .recipesCard {
   flex-basis: 32%;
   border: radius 5px ;
-  height: 700px;
+  height: 500px;
 }
 .CardImage {
   height: 250px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 .SeeMore {
   width: 100%;
@@ -74,3 +83,15 @@
   border-radius: 8px;
   margin-top: -5px;
 }
+.CardDescription {
+  height: 200px;
+}
+.Description{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+
+
