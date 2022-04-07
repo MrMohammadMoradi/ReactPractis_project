@@ -7,6 +7,8 @@ import './App.css';
 import React from 'react';
 import NavBar from './components/NavBar';
 import HomePage from './Pages/HomePage';
+import AdvanceSearch from './Pages/AdvanceSearch'
+import About from './Pages/About'
 
 
 
@@ -17,6 +19,8 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
+        <Route path='/Search/Advance' element={<AdvanceSearch/>}/>
+        <Route path='/AboutMe' element={<About/>}/>
 
       </Routes>
 
