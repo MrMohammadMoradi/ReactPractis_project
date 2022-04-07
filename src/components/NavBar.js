@@ -5,7 +5,7 @@ function NavBar(){
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid bg-dark ">
-                <Link className="navbar-brand ms-4" to="/home">
+                <Link className="navbar-brand ms-4" to="/">
                     <img src={FoodDish} alt = 'logoImage'/>
                 </Link>
                 
@@ -17,13 +17,13 @@ function NavBar(){
                     <div className='d-flex mx-auto'>
                         <ul className="navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active fw-bold text-white" aria-current="page" to="/home">Home</Link>
+                                <Link className="nav-link active fw-bold text-white" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link active fw-bold text-white mx-4" to="/Search/Advance">Advance Search</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active fw-bold text-white" to="/About">About</Link>
+                                <Link className="nav-link active fw-bold text-white" to="/AboutMe">About</Link>
                             </li>
                         </ul>
                     </div>
