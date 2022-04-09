@@ -93,6 +93,35 @@
   max-width: 250px;
 }
 
+/****************** Advance Search Menu *************/
+.advance {
+  background-color: rgb(213, 206, 206);
+  padding: 50px;
+}
+.AdvSearchBox {
+  width: 450px;
+  background: rgb(234, 231, 231);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+
+}
+.AdvSearchBox input {
+  margin: 10px 25px;
+  width: 350px;
+  height: 50px;
+  border:none;
+  border-radius: 5px;
+}
+.AdvSearchBox .NumberRecipes input {
+  width: 80px;
+  border-radius: 10px;
+}
+.AdvSearchBox button{
+  width: 200px;
+  background: rgb(250, 208, 0);
+  border-radius: 4px;
+}
 
 /******************* AboutPage **********************/
 .Infomation{
