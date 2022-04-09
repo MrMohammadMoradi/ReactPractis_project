@@ -43,30 +43,6 @@
   border-radius: 10px;
 }
 
-
-/******************** HomePage **********************/
-.selectNumberOfRecipes {
-  width: 60px;
-  height: 32px;
-  border-radius: 5px;
-}
-
-.container {
-  text-align: left;
-}
-
-.titleSecion {
-  border-radius: 5px 5px 0 0;
-  margin-bottom: 0;
-} 
-
-.subContainer { 
-  border: 1px solid black;
-  padding-top: 40px;
-  padding-left: 4%;
-}
-
-
 /******************** Card.js ***********************/
 .recipesCard {
   flex-basis: 32%;
@@ -92,6 +68,33 @@
   text-overflow: ellipsis;
   max-width: 250px;
 }
+
+
+
+/******************** HomePage **********************/
+.selectNumberOfRecipes {
+  width: 60px;
+  height: 32px;
+  border-radius: 5px;
+}
+
+.container {
+  text-align: left;
+}
+
+.titleSecion {
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 0;
+} 
+
+.subContainer { 
+  border: 1px solid black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 4%;
+}
+
+
 
 /****************** Advance Search Menu *************/
 .advance {

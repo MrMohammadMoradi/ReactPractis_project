@@ -21,12 +21,12 @@ function HomePage() {
     }, []);
 
     return (
-    <div className="App">
+    <div className="App  pb-5">
         <SearchMenu/>
         
-        <div className='container bg-white px-0 mb-5'>
+        <div className='container bg-white px-0 mt-5'>
             <h3 className='titleSecion text-white bg-dark py-2 ps-4'>New post</h3>
-            <div className='subContainer d-flex flex-wrap'>
+            <div className='subContainer d-flex flex-wrap pb-4'>
             {
                 post.map(item =>
                     <Card title={item.title} cardtext={item.instructions} image={item.image}/>
