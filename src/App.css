@@ -43,10 +43,35 @@
   border-radius: 10px;
 }
 
+/********* **** HEAD ***** *****/
+.selectNumberOfRecipes {
+  width: 60px;
+  height: 32px;
+  border-radius: 5px;
+}
+
+
+/******************** HomePage **********************/
+
+
+.container {
+  text-align: left;
+}
+
+.titleSecion {
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 0;
+} 
+
+.subContainer { 
+  padding-top: 40px;
+  padding-left: 4%;
+}
+
 /******************** Card.js ***********************/
 .recipesCard {
   flex-basis: 32%;
-  border: radius 5px ;
+  border-radius: 5px ;
   height: 500px;
 }
 .CardImage {
@@ -88,7 +113,6 @@
 } 
 
 .subContainer { 
-  border: 1px solid black;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 4%;
@@ -166,3 +190,36 @@
 }
 
 
+
+
+
+/********************* LogIn Page *******************/
+.LoginPage {
+  background-color:rgb(182, 177, 180);
+  padding: 50px;
+}
+.LoginSecion {
+  width: 920px;
+  height: 500px;
+  border-radius: 10px;
+
+}
+
+.pastaIMG {
+  width: 500px;
+  height: 500px;
+  margin-right: -5px;
+  border-radius: 0 15px 15px 0;
+}
+
+.loginbtn {
+  border-radius: 7px;
+}
+
+.OS {
+  text-decoration: none;
+}
+
+.SM button,a {
+  border-radius: 50px;
+}
