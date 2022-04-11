@@ -202,6 +202,7 @@
   width: 920px;
   height: 500px;
   border-radius: 10px;
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -222,4 +223,23 @@
 
 .SM button,a {
   border-radius: 50px;
+}
+
+
+/********************* Signup Page ******************/
+.SignUpPage {
+  background-color:rgb(182, 177, 180);
+  padding: 50px;
+}
+
+.SignupSecion {
+  width: 1100px;
+  height: 750px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.SUI {
+  width: 100%;
+  height: 100%;
 }

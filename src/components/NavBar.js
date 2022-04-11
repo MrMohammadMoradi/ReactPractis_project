@@ -30,7 +30,7 @@ function NavBar(){
                     
                     <div className="d-flex">
                         <Link to='/User/Login'> <button className="btn text-white bg-info px-4 mx-2 rounded-pill" type="submit">Log In</button> </Link>
-                        <Link to='/User/SingUp'> <button className="btn text-white bg-primary px-4 rounded-pill" type="submit">Sign Up</button> </Link>
+                        <Link to='/User/SignUp'> <button className="btn text-white bg-primary px-4 rounded-pill" type="submit">Sign Up</button> </Link>
                     </div>
                 </div>
             </div>

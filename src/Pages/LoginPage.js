@@ -65,7 +65,7 @@ function LoginPage() {
                         </button>
                         <br/>
                         <Link className='OS ps-1'
-                            to='/User/SingUp'> 
+                            to='/User/SignUp'> 
                             Or SignUp
                         </Link>
                     </form>
