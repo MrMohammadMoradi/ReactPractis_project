@@ -34,7 +34,9 @@
   width: 330px;
   border-radius: 10px;
 }
-.SearchBox .NumberRecipes input {
+
+.SearchBox input {
+
   width: 80px;
   border-radius: 10px;
 }

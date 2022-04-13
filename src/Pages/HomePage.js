@@ -1,39 +1,41 @@
-import React from 'react';
-import {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
+
+import HomeBody from '../components/HomeBody';
 import SearchMenu from '../components/SearchMenu';
-import Card from '../components/Card';
-import WhenError from '../components/WhenError';
 
 function HomePage() {
+    const [findRecipes, setFindRecipes] = useState(`https://api.spoonacular.com/recipes/random?number=9&apiKey=182b3ff3a93e4586bad62cf03d8e3bc5`)
 
     let [post, setPost] = useState([])
-    let numberOfRecipes = 9;
+    // const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        fetch(`https://api.spoonacular.com/recipes/random?number=${numberOfRecipes}&apiKey=182b3ff3a93e4586bad62cf03d8e3bc5`)
+        // setLoading(true);
+        fetch(findRecipes)
         .then((res) => res.json())
-        .then((data) =>{ setPost(data.recipes);
-        console.log(post, data.recipes)})
-        .then(()=> {
-        console.log(post);
-        })
+        .then((data) =>{ setPost(data.recipes)})
+        .then(() => console.log(post))
         .catch((erorr) => console.log(erorr))
-    
-    }, []);
+        // .finally(() => {
+        //     setLoading(false);
+        // });
 
+    }, [findRecipes]);
+
+
+
+    const SetFR = (api)=> {
+        setFindRecipes(api);
+        console.log(api);
+    }
+    
     return (
-    <div className="App  pb-5">
-        <SearchMenu/>        
-        <div className='container bg-white px-0 pb-3 mb-5'>
-            <h3 className='titleSecion text-white bg-dark py-2 ps-4'>New post</h3>
-            <div className='subContainer d-flex flex-wrap pb-4'>
-                {
-                    (post !== undefined) ?  post.map(item =>
-                        <Card title={item.title} cardtext={item.instructions} image={item.image}/>
-                    ) : <WhenError/>
-                }
-            </div>
-        </div>
+
+    <div className="App">
+        <SearchMenu ChangeAPI={SetFR}/>
+    
+        <HomeBody  posts={post} />
+
     </div>
     )
 }
