@@ -1,30 +1,49 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 function AdvanceSearchMenu() {
+    const [firstIngredient, setFirstIngredient] = useState('')
+    const [secoundIngredient, setSecoundIngredient] = useState('')
+    const [therdIngredient, setTherdIngredient] = useState('')
+    const [numberOfRecipesAdvance, setNumberOfRecipesAdvance] = useState('')
+
+    function GetIngredients (e) {
+        e.preventDefault();
+        console.warn("data", firstIngredient, secoundIngredient, therdIngredient, numberOfRecipesAdvance)
+    }
 
     return (
         <div className='AdvanceSearchSecion ' >
             <div className='AdvSearchBox mx-auto pb-4'>
                 <h3 className='fs-2 pt-4'> Search Recipes By Ingredients </h3>
-                <form className='information'>
-                    <input className='firstIngredient ps-3' type='text' placeholder='Enter an ingredient' required/>
-                    <input className='secoundIngredient ps-3' type='text' placeholder='Enter an ingredient' required/>
-                    <input className='therdIngredient ps-3' type='text' placeholder='Enter an ingredient' required/>
-                    <label className='w-100'>
-                        Number of recipes :
-                        <select className='selectNumberOfRecipes border-0 ms-3'>
-                            <option value='1'>1</option>
-                            <option value='2'>2</option>
-                            <option value='3'>3</option>
-                            <option value='4'>4</option>
-                            <option value='5'>5</option>
-                            <option value='6'>6</option>
-                            <option value='7'>7</option>
-                            <option value='8'>8</option>
-                            <option value='9'>9</option>
-                        </select>
-                    </label>
-                    <button className='mt-4 py-1 fs-5 border-0'> Search </button>
+                <form className='information'
+                    onSubmit={GetIngredients}>
+                    <input className='firstIngredient ps-3' 
+                        type='text' 
+                        placeholder='Enter an ingredient' 
+                        onChange={(e) => setFirstIngredient(e.target.value)}
+                        required/>
+                    <input className='secoundIngredient ps-3' 
+                        type='text' 
+                        placeholder='Enter an ingredient' 
+                        onChange={(e) => setSecoundIngredient(e.target.value)}
+                        required/>
+                    <input className='therdIngredient ps-3' 
+                        type='text' 
+                        placeholder='Enter an ingredient' 
+                        onChange={(e) => setTherdIngredient(e.target.value)}
+                        required/>
+                    <label className='mt-3'>
+                            number of recipes : 
+                            <input className='NSA border-0 mb-2 py-2 px-3 fs-5 '
+                                type='number'
+                                placeholder='1'
+                                onChange={(e) => setNumberOfRecipesAdvance(e.target.value)}
+                                required/>
+                        </label>
+                    <button className='mt-4 py-1 fs-5 border-0'
+                        type='submit'>
+                            Search 
+                    </button>
                 </form>
             </div>
         </div>

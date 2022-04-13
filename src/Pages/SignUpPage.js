@@ -88,7 +88,8 @@ function SignUpPage() {
                             className='checkBox py-5' 
                             onChange={(e) => setChecked(e.target.checked)}
                         />
-                        <Link className='ps-2' to='/TAndP'>
+                        <Link className='ps-2' 
+                            to='/TAndP'>
                             Terms and privacy
                         </Link>
 
@@ -96,7 +97,7 @@ function SignUpPage() {
                         <button 
                             type='submit' 
                             className='loginbtn bg-primary text-white border-0 my-3 px-5 py-3'
-                        >
+                            >
                             SignUp 
                         </button>
                         <br/>
@@ -108,8 +109,8 @@ function SignUpPage() {
                     <SocialMedia/>
                 </div>
                 <img className='pastaIMG SUI' 
-                        src={PastaDish}
-                        alt='PastaImg'/>
+                    src={PastaDish}
+                    alt='PastaImg'/>
             </div>
             
         </div>
