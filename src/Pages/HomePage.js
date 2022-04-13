@@ -2,6 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react'
 import SearchMenu from '../components/SearchMenu';
 import Card from '../components/Card';
+import WhenError from '../components/WhenError';
 
 function HomePage() {
 
@@ -27,9 +28,9 @@ function HomePage() {
             <h3 className='titleSecion text-white bg-dark py-2 ps-4'>New post</h3>
             <div className='subContainer d-flex flex-wrap pb-4'>
                 {
-                    post.map(item =>
+                    (post !== undefined) ?  post.map(item =>
                         <Card title={item.title} cardtext={item.instructions} image={item.image}/>
-                    ) 
+                    ) : <WhenError/>
                 }
             </div>
         </div>
