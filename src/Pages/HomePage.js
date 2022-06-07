@@ -13,7 +13,7 @@ function HomePage() {
         // setLoading(true);
         fetch(findRecipes)
         .then((res) => res.json())
-        .then((data) =>{ setPost(data.recipes)})
+        .then((data) =>{setPost(data.results ?? data.recipes)})
         .then(() => console.log(post))
         .catch((erorr) => console.log(erorr))
         // .finally(() => {
