@@ -13,7 +13,7 @@ function HomeBody({posts}) {
             <div className='subContainer d-flex flex-wrap'>
             {
                 (posts !== undefined) ? posts.map (item =>
-                    <Card title={item.title} image={item.image} cardtext={item.summary}/>)
+                    <Card title={item.title} image={item.image} key={item.id} cardtext={item.title ?? item.summary}/>)
                     : <WhenError/>
             }
             </div>
